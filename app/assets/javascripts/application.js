@@ -17,5 +17,6 @@
 //= require angular-messages
 //= require angular-animate
 //= require angular-aria
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .

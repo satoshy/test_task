@@ -1,9 +1,9 @@
-'use strict'
+angular.module('app', ['ngMaterial', 'ngAnimate']);
 
-var app = angular.module('app', ['ngMaterial', 'ngAnimate']);
+angular.module('app').controller('AppCtrl', ['$mdSidenav', function ($mdSidenav) {
+	var vm = this;
 
-app.controller('AppCtrl', function ($scope, $mdSidenav) {
-  $scope.openRightMenu = function() {
-    $mdSidenav('right').toggle();
-  };
-});
+  	vm.openRightMenu = function() {
+    	$mdSidenav('right').toggle();
+  	};
+}]);

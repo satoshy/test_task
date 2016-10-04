@@ -1,9 +1,24 @@
 <div ng-app="app" >
-  <div id="sideNavContainer" ng-controller="AppCtrl" layout="row" ng-cloak>
-    <md-sidenav md-component-id="left" class="md-sidenav-left">Welcome to TutorialsPoint.Com</md-sidenav>
-      <md-content class="wrapper">           
-        <md-button class="btn-right md-primary" ng-click="openRightMenu()">Open Right Menu</md-button>
-      </md-content>
-      <md-sidenav md-component-id="right" class="md-sidenav-right"></md-sidenav>
+  <div id="sideNavContainer" ng-controller="AppCtrl as ctrl" layout="row">
+    <md-content class="wrapper">           
+      <md-button class="btn-right md-primary" ng-click="ctrl.openRightMenu()">Open Right Menu</md-button>
+    </md-content>
+    <md-sidenav md-component-id="right" class="md-sidenav-right">
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Edit</a></li>
+          <li><a href="#">Triggers</a></li>
+          <li><a href="#">Preview</a></li>
+        </ul>
+        <h3>TITLE</h3>
+        <input type="text" name="title" placeholder="Enter a title here.">
+        <br>
+        <h3>EXTRA INSTRUCTIONS</h3>
+        <input type="text" name="instructions" placeholder="Add any additional description here.">
+        <br>
+        <h3>TAGS</h3>
+        <input type="text" name="tags" placeholder="Enter new custom tag">
+      </div>
+    </md-sidenav>
   </div>
 </div>

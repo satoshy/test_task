@@ -10,20 +10,22 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 
-#sideNavContainer {
-    text-align: center;
-}
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 .btn-right {
 	margin: auto !important;
 }
 
 .wrapper {
+	text-align: center;
 	margin-top: 150px;
 	width: 100%;
 	height: 100%;
+}
+
+.md-sidenav-right {
+	width: 400px;
 }
