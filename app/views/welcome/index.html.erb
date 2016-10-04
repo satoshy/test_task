@@ -1,7 +1,7 @@
 <div ng-app="app" >
   <div id="sideNavContainer" ng-controller="AppCtrl as ctrl" layout="row">
     <md-content class="wrapper">           
-      <md-button class="btn-right md-primary" ng-click="ctrl.openRightMenu()">Open Right Menu</md-button>
+      <md-button class="btn-right md-raised md-primary" ng-click="ctrl.openRightMenu()">Open Right Menu</md-button>
     </md-content>
     <md-sidenav md-component-id="right" class="md-sidenav-right">
       <div class="container">
@@ -10,15 +10,37 @@
           <li><a href="#">Triggers</a></li>
           <li><a href="#">Preview</a></li>
         </ul>
-        <h3>TITLE</h3>
-        <input type="text" name="title" placeholder="Enter a title here.">
-        <br>
-        <h3>EXTRA INSTRUCTIONS</h3>
-        <input type="text" name="instructions" placeholder="Add any additional description here.">
-        <br>
-        <h3>TAGS</h3>
-        <input type="text" name="tags" placeholder="Enter new custom tag">
-      </div>
+        <div class="panel panel-default clearfix">
+          <input type="text" name="title" placeholder="">
+          <h4>TITLE</h4><hr>
+          <input type="text" name="title" placeholder="Enter a title here.">
+          <br>
+          <h4>EXTRA INSTRUCTIONS</h4><hr>
+          <input type="text" name="instructions" placeholder="Add any additional description here.">
+          <br>
+          <h4>TAGS</h4><hr>
+          <input type="text" name="tags" placeholder="Enter new custom tag">
+          <br>
+          <h4>CHECKLIST</h4><hr>
+          <md-button class="md-raised md-warn btn-item">Add Checklist Item</md-button>
+          <md-button class="md-raised md-primary btn-section">Add Section</md-button>
+          <br><hr>
+          <div class="col-md-2">
+            <img class="edit-img" ng-src="/assets/edit-img.jpg"></img>
+          </div>
+          <div class="col-md-10">
+            <h4>Include comment box?</h4>
+            <p>Include a comment box if you d like respondents to be able to provide comments.</p>
+          </div>
+        </div>
+          <div class="col-md-3">
+            <img class="trash" ng-src="/assets/trash.jpg"></img>
+          </div>
+          <div class="col-md-6">
+            <md-button class="md-raised md-warn">Save</md-button>
+            <md-button class="md-warn btn-cancel">Cancel</md-button>
+          </div>
+        </div>
     </md-sidenav>
   </div>
 </div>
