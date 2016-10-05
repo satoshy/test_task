@@ -11,7 +11,8 @@
     "dependencies": {
       "three.js"    : "https://raw.github.com/mrdoob/three.js/master/build/three.js",
       "angular"     : "latest",
-      "angular-material" : "latest"
+      "angular-material" : "latest",
+      "angular-ui-switch" : "latest"
     }
   }
 }

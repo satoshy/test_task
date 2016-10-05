@@ -14,6 +14,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "angular-ui-switch";
 
 h4 {
 	font-weight: bold;
@@ -46,6 +47,7 @@ input {
 	margin-bottom: 15px;
 	height: 40px;
 	width: 455px;
+	padding: 10px;
 }
 
 p {
@@ -56,6 +58,7 @@ textarea {
    resize: none;
    margin-bottom: 17px;
    margin-left: 15px;
+   padding: 10px;
 }
 
 .upload-img {
@@ -144,4 +147,58 @@ textarea {
  min-width: 520px !important;
  width: 50vw !important;
  max-width: 520px !important;
+}
+
+.on {
+	margin-left: 26px;
+	margin-top: 2px;
+	color: black !important;
+}
+
+.off {
+	margin-right: 26px;
+	margin-top: 2px;
+	color: black !important;
+}
+
+.switch {
+	margin-top: 20px;
+	margin-right: 15px;
+    width: 60px;
+    height: 40px;
+    small {
+    	height: 40px;
+    	width: 38px;
+    }
+}
+
+.check-1 {
+	width: 400px;
+	height: 40px;
+	text-transform: none !important;
+} 
+
+.check-2 {
+	width: 400px;
+	text-transform: none !important;
+}
+
+.check-3 {
+	width: 450px;
+	text-transform: none !important;
+}
+
+.check-4 {
+	width: 450px;
+	text-transform: none !important;
+}
+
+.check-5 {
+	width: 450px;
+	text-transform: none !important;
+}
+
+.hr-section {
+	border-top: 1px solid black;
+	margin-left: 10px;
 }

@@ -21,14 +21,25 @@
             <h4>TAGS</h4><hr>
             <input type="text" name="tags" placeholder="Enter new custom tag">
             <h4>CHECKLIST</h4><hr>
+            <md-button class="md-raised check-1 text-left">  CheckList Item 1</md-button>
+            <img class="" ng-src="/assets/photo_validation_off.png"></img>
+            <md-button class="md-raised check-2 text-left">  CheckList Item 2</md-button>
+            <img class="" ng-src="/assets/photo_validation_on.svg"></img>
+            <md-button class="md-raised check-3 text-left">  CheckList Item 3</md-button><hr>
+            <h4>Section 1</h4><hr class="hr-section">
+            <md-button class="md-raised check-4 text-left">  CheckList Item 4</md-button>
+            <md-button class="md-raised check-5 text-left">  CheckList Item 5</md-button>
             <md-button class="md-raised md-warn btn-item">Add Checklist Item</md-button>
             <md-button class="md-raised md-primary btn-section">Add Section</md-button><hr>
             <div class="col-md-2">
               <img class="edit-img" ng-src="/assets/new.png"></img>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-8">
               <h4>Include comment box?</h4>
               <p>Include a comment box if you d like respondents to be able to provide comments.</p>
+            </div>
+            <div class="col-md-1 row">
+              <switch id="enabled" name="enabled" ng-model="disabled" on="Yes" off="No" class="green switch"></switch>
             </div>
           </div>
             <div class="col-md-3">

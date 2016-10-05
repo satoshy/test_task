@@ -18,5 +18,6 @@
 //= require angular-animate
 //= require angular-aria
 //= require bootstrap-sprockets
+//= require angular-ui-switch
 //= require turbolinks
 //= require_tree .
