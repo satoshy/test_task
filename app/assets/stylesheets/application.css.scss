@@ -17,6 +17,7 @@
 
 h4 {
 	font-weight: bold;
+	margin-left: 15px;
 }
 
 hr {
@@ -28,6 +29,7 @@ li {
 	width: 100px;
 	text-align: center;
 	a {
+		border: none !important;
 		color: #858585 !important;
 	}
 }
@@ -40,14 +42,40 @@ li.active {
 }
 
 input {
-	width: 470px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	height: 40px;
+	width: 455px;
+}
+
+p {
+	margin-left: 15px;
+}
+
+textarea {
+   resize: none;
+   margin-bottom: 17px;
+   margin-left: 15px;
+}
+
+.upload-img {
 	height: 30px;
-	margin-left: 10px;
+	width: 30px;
 }
 
 .edit-img {
 	height: 80px;
     width: 80px;
+}
+
+.add-content {
+	margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+	height: 35px;
+	width: 455px;
+	color: orange !important;
+	text-transform: none !important;
 }
 
 .btn-right {
@@ -56,21 +84,44 @@ input {
 
 .btn-cancel {
 	border: 1px solid rgb(244,81,30); /* Green */
+	text-transform: none !important;
+}
+
+.btn-save {
+	text-transform: none !important;
 }
 
 .btn-item {
-	width: 225px;
+	width: 220px;
+	height: 46px;
+	margin-left: 15px;
+	text-transform: none !important;
 }
 
 .btn-section {
-	width: 225px;
+	width: 220px;
+	height: 46px;
 	background-color: #808080 !important;
+	text-transform: none !important;
 }
 
 .trash {
-    height: 40px;
-    width: 40px;
-    margin-top: 5px;
+	background-color: white;
+	border: 1px solid #acacac;
+	margin-top: 4px;
+	height: 41px;
+	width: 20px;
+}
+
+.trash-img {
+	margin-top: 4px;
+	height: 45px;
+	width: 45px;
+}
+
+.content-box {
+	margin-top: 20px;
+	margin-left: 10px;
 }
 
 .wrapper {
